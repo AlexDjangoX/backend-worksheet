@@ -170,9 +170,9 @@ Avoid copy-pasting; instead, read, reread, and write each word in your own words
    ```
 
 
-11. ❓ **You're building a real-time chat application similar to Slack, where users can send messages, join channels, and receive instant notifications. The backend needs to handle message broadcasting, user presence updates, and message history storage.
+10. ❓ **You're building a real-time chat application similar to Slack, where users can send messages, join channels, and receive instant notifications. The backend needs to handle message broadcasting, user presence updates, and message history storage.
     Which backend technology would you use for building the chat application's backend, and what factors make this technology suitable for managing real-time interactions and data storage?**
 
-   ```
-   📝 Your answer here
-   ```
+    ```
+    📝 Your answer here
+    ```
