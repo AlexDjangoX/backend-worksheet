@@ -154,7 +154,7 @@ Highlight the key features and advantages that Express.js brings to the developm
 
 ```
 
-📝 Your answer here
+📝 Express.js is software framework, which means it provides a standard way to build and deploy applications. This means we do not have to re-invent the wheel every time we want to build an application. Express is specifically used to build applications that run on Node.js runtime, it uses a non-blocking, asynchronous I/O model. I used Express.js to build the https secure server provided in the above answer. It comes with some key functionality - routing, middleware integration, simple server creation.
 
 ```
 
@@ -163,7 +163,23 @@ How does middleware fit into the request-response cycle, and what purpose does i
 
 ```
 
-📝 Your answer here
+📝 With reference to code in https-req-res:
+
+- creating an express instance, then we can create routes, use middleware and listen on specific ports for incoming requests.
+
+`const app = express();`
+
+- create routes. Routes define the endpoints at which requests can be made, the HTTP method (GET, POST, etc.), and the code that should be executed when the route is matched. In the provided code:
+
+`app.get('/', (req, res) => {res.send('Hello World over HTTPS!');});`
+
+- This code defines a GET route for the root URL ('/'). Any incoming GET request to this URL will trigger the callback function, which sends the message "Hello World over HTTPS!" back to the client.
+
+- middleware have access to the request response objects, as well as the next middleware function, they can execute any code, modify request response objects. An example of this in above code base is the cors middleware, which will allow cross-origin requests, in the example above the server runs on localhost:3000, and the client was running on localhost:3001, using cors middleware allows this:
+
+`app.use(cors());`
+
+Typically we can incorporate functionality like authorisation by employing middleware, a layer between the incoming request, which must allow progress to a given protected route.
 
 ```
 
