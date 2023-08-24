@@ -201,7 +201,14 @@ Provide a high-level overview of how Server Actions allow you to handle complex 
 
 ```
 
-📝 Your answer here
+📝 Nest.js Server Actions differ fundamentally in that you do not have to write any routes. Functions are defined on the server side code base, then can be imported into client side components and executed on the client side, but the functions are fired server side.
+
+- no explicit server creation
+- no explicit routing
+- seamless integration into front-end
+- simplified logic
+- enhanced security - since logic executes server side, protecting API keys etc.
+- optimized performance - requests are more direct
 
 ```
 
