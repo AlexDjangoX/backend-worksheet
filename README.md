@@ -187,7 +187,12 @@ Typically we can incorporate functionality like authorisation by employing middl
 
 ```
 
-📝 Your answer here
+📝 In Next.js we can build applications without the need to create a server, as we needed to do when we had an express/vanilla application above.
+It has a feature known as API routes, which act as serverless functions. They offer a simplified backend integration. With NextJS we can have a single code base in which we can have all our front and back code. By treating API routes as serverless functions, Next.js allows for code splitting, not only of front end but also backend - ensuring only required backend code runs for a particular route - giving optimized performance. Serverless functions fire in response to events.
+
+Serverless auto-scale. Each new request is handled by a new instance of the function, they are also stateless.
+
+Deployment onto platforms like Vercel are super simple.
 
 ```
 
