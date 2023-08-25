@@ -64,11 +64,11 @@ For each project, find the `.env.example` file in the project's root directory. 
 
 Take a close look at the code project given, i.e.,
 
-- [Vanilla Node.js API](/vanilla-nodejs)
-- [Express.js API](/expressjs).
+- [Vanilla Node.js API](/vanilla-nodejs) - built a simple https demo app using Vanilla - see https-req-res
+- [Express.js API](/expressjs). - have included past projects where I have implemented these technologies
 - [Next.js API Routes](/nextjs-apiroutes)
-- [Next.js Server Actions](/nextjs-serveractions)
-- [Supabase](/supabase)
+- [Next.js Server Actions](/nextjs-serveractions) - our current project Morent implements these technologies
+- [Supabase](/supabase) - see below, I have included a past project where these technologies have been implemented
 
 Run the project and try it out to notice we can create APIs or use BaaS (Backend as a Service) differently.
 Finally, write down the good and bad points of each method and when you think it's better to use one method over the other. Share your observations below.
@@ -79,7 +79,7 @@ Finally, write down the good and bad points of each method and when you think it
 
 ## Activity 2 - Integration 💻
 
-Once you've familiarized yourself with all the approaches, attempt to create an API for the Car Rent Project.
+(✅) Once you've familiarized yourself with all the approaches, attempt to create an API for the Car Rent Project.
 Your task is to create a complete CRUD API for at least one model or schema (i.e., Car or User) using any of the above approaches.
 
 🌟 **Bonus Challenge**: Take it a step further and create all versions using all the mentioned approaches. Feel free to explore and build all separate projects to practice
@@ -89,12 +89,28 @@ and compare the functionalities of Vanilla Node.js, Express.js, Next.js API Rout
 🎯 Share the Project link here
 ```
 
-```
-🌟 Share the bonus Project 01 link here
-🌟 Share the bonus Project 02 link here
-🌟 Share the bonus Project 03 link here
-🌟 Share the bonus Project 04 link here
-```
+# The projects below are past projects.
+
+### Supabase project
+
+I built this project as a way of learning NextJS version 13, making use of getServerSideProps etc.
+It was also the first project where I used Supabase. I used react-hook-form and implemented CRUD for displayed products.
+
+[Deployed on Vercel](https://next-drelix.vercel.app/pants)
+
+[GitHub Repository](https://github.com/AlexDjangoX/next-drelix)
+
+### NodeJS / Express
+
+This project was built with with NodeJS/Express, JWT, Prisma. The entry point for the application is app.js. Some routes are protected, utilizing JWT web tokens, and jwtCheck function as middleware. The backend flow is then to the the routes, then to the controllers, where DB queries are executed using the prisma client.
+
+Front end is bootstrapped with create-react-app. I later built the same project using NextJS version 13
+
+[Polish-conjugation](https://conjugate-server.vercel.app/kanban)
+
+[GitHub client](https://github.com/AlexDjangoX/conjugate-client)
+
+[GitHub server](https://github.com/AlexDjangoX/conjugate-server)
 
 **Note**: You can create a new project in the same repository. Set up a fresh folder for this activity project, and you're ready to get started!
 
@@ -104,7 +120,7 @@ Let's take a moment to reflect on what you've learned so far through this activi
 Take your time and conduct thorough research to answer the following questions thoughtfully. These questions are designed to reinforce your foundational knowledge on this topic and help you prepare for interviews.
 Avoid copy-pasting; instead, read, reread, and write each word in your own words.
 
-1. ❓ **Describe the core differences between the HTTP and HTTPS modules in Node.js. How would you set up an HTTPS server?**
+1. ❓ **Describe the core differences between the HTTP and HTTPS modules in Node.js. How would you set up an HTTPS server?**(✅)
 
    ```
    See https-req-res for secure server and front end which will send a request to secure server
@@ -149,7 +165,7 @@ To remedy this I can:
 
 ```
 
-2. ❓ **What is Express.js, and why is it commonly referred to as a "web application framework for Node.js"?
+2. ❓ **What is Express.js, and why is it commonly referred to as a "web application framework for Node.js"?(✅)
 Highlight the key features and advantages that Express.js brings to the development of web applications.**
 
 ```
@@ -158,7 +174,7 @@ Highlight the key features and advantages that Express.js brings to the developm
 
 ```
 
-3. ❓ **Describe the basic structure of an Express.js application. What are routes and how are they defined?
+3. ❓ **Describe the basic structure of an Express.js application. What are routes and how are they defined?(✅)
 How does middleware fit into the request-response cycle, and what purpose does it serve in Express.js?**
 
 ```
@@ -183,7 +199,7 @@ Typically we can incorporate functionality like authorisation by employing middl
 
 ```
 
-4. ❓ **Explain the purpose of serverless functions in the context of Next.js API routes. How do they impact scalability and deployment?**
+4. ❓ **Explain the purpose of serverless functions in the context of Next.js API routes. How do they impact scalability and deployment?**(✅)
 
 ```
 
@@ -196,12 +212,12 @@ Deployment onto platforms like Vercel are super simple.
 
 ```
 
-5. ❓ **Explain the fundamental concept of Next.js Server Actions. How do they differ from standard API routes in Next.js?
+5. ❓ **Explain the fundamental concept of Next.js Server Actions. How do they differ from standard API routes in Next.js?(✅)
 Provide a high-level overview of how Server Actions allow you to handle complex server-side logic efficiently in a Next.js application.**
 
 ```
 
-📝 Nest.js Server Actions differ fundamentally in that you do not have to write any routes. Functions are defined on the server side code base, then can be imported into client side components and executed on the client side, but the functions are fired server side.
+📝 Nest.js Server Actions differ fundamentally in that you do not have to write any routes. Functions are defined on the server side code base, then can be imported into client side components and executed on the client side, but the functions are fired server side.(✅)
 
 - no explicit server creation
 - no explicit routing
@@ -217,7 +233,7 @@ How does Supabase differ from traditional relational databases, and what advanta
 
 ```
 
-📝 Your answer here
+📝 Supabase adds real-time capabilities to instantly observe data changes. It auto-generates CRUD APIs based on PostgreSQL schemas, simplifying backend development. Integrated authentication streamlines user management, eliminating third-party dependencies. It offers real-time, authentication, and swift API generation in one platform.
 
 ```
 
@@ -226,7 +242,7 @@ How does Supabase differ from traditional relational databases, and what advanta
 
 ```
 
-📝 Your answer here
+📝 Supabase extends PostgreSQL, adding features essential for modern apps. While traditional databases store and manage data, Supabase introduces real-time updates, built-in authentication, and instant API generation.
 
 ```
 
@@ -235,7 +251,7 @@ Provide an example of designing a database schema for a blog platform that inclu
 
 ```
 
-📝 Your answer here
+📝 I have exceeded my free project limit on Supabase platform. Please see past projects for Supabase implementation.
 
 ```
 
